@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PackageTripDetailItineraryTVC" rowHeight="313" id="KGk-i7-Jjw" customClass="PackageTripDetailItineraryTVC" customModule="FavTrail" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="729" height="313"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="729" height="313"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyA-89-QVC">
+                        <rect key="frame" x="10" y="9.9999999999999982" width="709" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UWf-mj-28W">
+                        <rect key="frame" x="10" y="35.333333333333343" width="709" height="272.66666666666663"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UyA-89-QVC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="2eE-8o-XuS"/>
+                    <constraint firstItem="UWf-mj-28W" firstAttribute="top" secondItem="UyA-89-QVC" secondAttribute="bottom" constant="5" id="CDr-S8-5p1"/>
+                    <constraint firstAttribute="trailing" secondItem="UyA-89-QVC" secondAttribute="trailing" constant="10" id="ENb-R2-8d3"/>
+                    <constraint firstItem="UyA-89-QVC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="GdJ-W7-l3t"/>
+                    <constraint firstAttribute="bottom" secondItem="UWf-mj-28W" secondAttribute="bottom" constant="5" id="YPf-OJ-uUD"/>
+                    <constraint firstAttribute="trailing" secondItem="UWf-mj-28W" secondAttribute="trailing" constant="10" id="dmp-9c-Pfv"/>
+                    <constraint firstItem="UWf-mj-28W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lz9-9D-m2r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="stackVIew" destination="UWf-mj-28W" id="a1q-aH-oR1"/>
+                <outlet property="title" destination="UyA-89-QVC" id="Hfp-9o-57p"/>
+            </connections>
+            <point key="canvasLocation" x="348.85496183206106" y="-133.45070422535213"/>
+        </tableViewCell>
+    </objects>
+</document>

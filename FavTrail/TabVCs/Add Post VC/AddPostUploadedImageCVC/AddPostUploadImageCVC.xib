@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddPostUploadImageCVC" id="gTV-IL-0wX" customClass="AddPostUploadImageCVC" customModule="FavTrail" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="181" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="181" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Bd-kh-Wg1">
+                        <rect key="frame" x="0.0" y="5" width="176" height="150"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yK-1F-kv6">
+                        <rect key="frame" x="0.0" y="5" width="176" height="150"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.32780612244897961" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AvS-KK-LHN">
+                        <rect key="frame" x="156" y="0.0" width="25" height="25"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b4q-Lb-R2j">
+                                <rect key="frame" x="5" y="7.6666666666666625" width="15" height="10.000000000000005"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="AhY-3u-DZ9"/>
+                                    <constraint firstAttribute="width" constant="15" id="VdU-8r-hUy"/>
+                                </constraints>
+                                <imageReference key="image" image="xmark" catalog="system" symbolScale="default"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="N6h-Rx-2Hp"/>
+                            <constraint firstItem="b4q-Lb-R2j" firstAttribute="centerY" secondItem="AvS-KK-LHN" secondAttribute="centerY" id="jyB-6J-9vt"/>
+                            <constraint firstAttribute="height" constant="25" id="lhd-Iv-gmP"/>
+                            <constraint firstItem="b4q-Lb-R2j" firstAttribute="centerX" secondItem="AvS-KK-LHN" secondAttribute="centerX" id="mUp-ej-kUl"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFS-5d-dBE">
+                        <rect key="frame" x="141" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="6m0-58-XGM"/>
+                            <constraint firstAttribute="height" constant="40" id="QPf-Sn-E1t"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="onCrossButtonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="nDM-RE-lJD"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7yK-1F-kv6" secondAttribute="bottom" id="2Yl-OG-4z7"/>
+                <constraint firstAttribute="trailing" secondItem="5Bd-kh-Wg1" secondAttribute="trailing" constant="5" id="8vU-YR-0Sp"/>
+                <constraint firstItem="IFS-5d-dBE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9pL-ge-DgP"/>
+                <constraint firstAttribute="trailing" secondItem="IFS-5d-dBE" secondAttribute="trailing" id="B0Z-MT-hje"/>
+                <constraint firstAttribute="trailing" secondItem="7yK-1F-kv6" secondAttribute="trailing" constant="5" id="EUN-iw-X2u"/>
+                <constraint firstItem="7yK-1F-kv6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="GR4-oT-JnX"/>
+                <constraint firstItem="AvS-KK-LHN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JAh-66-Vlk"/>
+                <constraint firstItem="5Bd-kh-Wg1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Jo0-Ou-Siy"/>
+                <constraint firstItem="5Bd-kh-Wg1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MKG-H1-wH4"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="IFS-5d-dBE" secondAttribute="bottom" id="P8l-VH-x50"/>
+                <constraint firstItem="IFS-5d-dBE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VIh-9Q-AC6"/>
+                <constraint firstAttribute="bottom" secondItem="5Bd-kh-Wg1" secondAttribute="bottom" id="kAb-6b-jUH"/>
+                <constraint firstAttribute="trailing" secondItem="AvS-KK-LHN" secondAttribute="trailing" id="nxv-SE-Q5j"/>
+                <constraint firstItem="7yK-1F-kv6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sof-gq-19X"/>
+            </constraints>
+            <size key="customSize" width="181" height="155"/>
+            <connections>
+                <outlet property="crossButtonView" destination="AvS-KK-LHN" id="WFo-XZ-KKH"/>
+                <outlet property="imageView" destination="5Bd-kh-Wg1" id="BvZ-pa-EIn"/>
+                <outlet property="shadowView" destination="7yK-1F-kv6" id="Fxa-zj-K0d"/>
+            </connections>
+            <point key="canvasLocation" x="-57.692307692307693" y="28.080568720379144"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

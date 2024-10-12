@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BlogPostView" customModule="FavTrail" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="680" height="389"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDF-I2-bkF">
+                    <rect key="frame" x="0.0" y="0.0" width="680" height="389"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhW-Vn-zOZ">
+                            <rect key="frame" x="10" y="321.5" width="660" height="57.5"/>
+                            <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and  scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and  scrambled it to make a type specimen book. </string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fnk-Dx-b9W">
+                            <rect key="frame" x="10" y="259" width="660" height="57.5"/>
+                        </stackView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BzY-4o-F2O">
+                            <rect key="frame" x="0.0" y="0.0" width="680" height="249"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="249" id="dAi-V4-CNo"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0v4-vA-xA8">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="jhW-Vn-zOZ" secondAttribute="bottom" constant="10" id="0mt-VU-lu1"/>
+                        <constraint firstItem="jhW-Vn-zOZ" firstAttribute="top" secondItem="fnk-Dx-b9W" secondAttribute="bottom" constant="5" id="5hZ-Yu-Y8m"/>
+                        <constraint firstItem="jhW-Vn-zOZ" firstAttribute="trailing" secondItem="fnk-Dx-b9W" secondAttribute="trailing" id="5hp-Mc-TWI"/>
+                        <constraint firstAttribute="trailing" secondItem="fnk-Dx-b9W" secondAttribute="trailing" constant="10" id="5ot-EQ-e5d"/>
+                        <constraint firstItem="BzY-4o-F2O" firstAttribute="leading" secondItem="PDF-I2-bkF" secondAttribute="leading" id="7Bw-g9-BkG"/>
+                        <constraint firstItem="fnk-Dx-b9W" firstAttribute="top" secondItem="BzY-4o-F2O" secondAttribute="bottom" constant="10" id="KxT-7w-HWt"/>
+                        <constraint firstItem="jhW-Vn-zOZ" firstAttribute="leading" secondItem="fnk-Dx-b9W" secondAttribute="leading" id="Nrr-Mb-zC8"/>
+                        <constraint firstAttribute="trailing" secondItem="BzY-4o-F2O" secondAttribute="trailing" id="Rgz-op-E9l"/>
+                        <constraint firstItem="fnk-Dx-b9W" firstAttribute="leading" secondItem="PDF-I2-bkF" secondAttribute="leading" constant="10" id="gBo-Qr-Tei"/>
+                        <constraint firstItem="BzY-4o-F2O" firstAttribute="top" secondItem="PDF-I2-bkF" secondAttribute="top" id="nJo-kF-k1S"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="PDF-I2-bkF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Agu-Gd-Y2b"/>
+                <constraint firstAttribute="bottom" secondItem="PDF-I2-bkF" secondAttribute="bottom" id="Wkt-Kl-J2F"/>
+                <constraint firstItem="PDF-I2-bkF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="k4i-Y6-8Zk"/>
+                <constraint firstAttribute="trailing" secondItem="PDF-I2-bkF" secondAttribute="trailing" id="kGf-cA-Pwq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="blogBodyText" destination="jhW-Vn-zOZ" id="miI-Ml-CVM"/>
+                <outlet property="blogDetailStackView" destination="fnk-Dx-b9W" id="NBn-FS-85J"/>
+                <outlet property="collectionView" destination="BzY-4o-F2O" id="D9E-7c-Zz4"/>
+                <outlet property="cvHeightConstraint" destination="dAi-V4-CNo" id="evw-ug-X6p"/>
+            </connections>
+            <point key="canvasLocation" x="327.536231884058" y="-104.12946428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

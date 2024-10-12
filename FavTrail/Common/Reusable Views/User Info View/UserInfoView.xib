@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserInfoView" customModule="FavTrail" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAo-zf-6aP">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jow-J5-RAV">
+                            <rect key="frame" x="10" y="11.5" width="50" height="47.5"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="bOB-tC-yMY"/>
+                                <constraint firstAttribute="height" constant="50" id="lIK-B4-Yrg"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0o-21-r57">
+                            <rect key="frame" x="65" y="10" width="35.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3Q-Og-Fvl">
+                            <rect key="frame" x="65" y="27" width="26.5" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuk-E0-R2L">
+                            <rect key="frame" x="85" y="42.5" width="26.5" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="0.0" green="0.44705882349999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EdS-S3-mZS">
+                            <rect key="frame" x="65" y="41.5" width="15" height="13.5"/>
+                            <color key="tintColor" red="0.0" green="0.44705882349999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="PRi-W9-68o"/>
+                                <constraint firstAttribute="width" constant="15" id="sdv-uO-zSx"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="EdS-S3-mZS" firstAttribute="top" secondItem="a3Q-Og-Fvl" secondAttribute="bottom" constant="2" id="0t5-MO-Je2"/>
+                        <constraint firstItem="EdS-S3-mZS" firstAttribute="leading" secondItem="a3Q-Og-Fvl" secondAttribute="leading" id="8lX-1Z-fhY"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Jow-J5-RAV" secondAttribute="bottom" constant="5" id="9q8-d0-tqd"/>
+                        <constraint firstItem="Jow-J5-RAV" firstAttribute="leading" secondItem="wAo-zf-6aP" secondAttribute="leading" constant="10" id="Iae-n5-pBQ"/>
+                        <constraint firstItem="p0o-21-r57" firstAttribute="top" secondItem="Jow-J5-RAV" secondAttribute="top" id="LLj-z5-PU7"/>
+                        <constraint firstItem="zuk-E0-R2L" firstAttribute="centerY" secondItem="EdS-S3-mZS" secondAttribute="centerY" id="S21-8j-d73"/>
+                        <constraint firstItem="a3Q-Og-Fvl" firstAttribute="leading" secondItem="p0o-21-r57" secondAttribute="leading" id="Y26-em-3yE"/>
+                        <constraint firstItem="p0o-21-r57" firstAttribute="leading" secondItem="Jow-J5-RAV" secondAttribute="trailing" constant="5" id="fkc-Yf-uVK"/>
+                        <constraint firstItem="Jow-J5-RAV" firstAttribute="top" secondItem="wAo-zf-6aP" secondAttribute="top" constant="10" id="fqK-Eh-1Fd"/>
+                        <constraint firstItem="a3Q-Og-Fvl" firstAttribute="top" secondItem="p0o-21-r57" secondAttribute="bottom" id="lKm-pw-F57"/>
+                        <constraint firstItem="zuk-E0-R2L" firstAttribute="leading" secondItem="EdS-S3-mZS" secondAttribute="trailing" constant="5" id="m6S-pQ-LI3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wAo-zf-6aP" secondAttribute="bottom" id="A87-5H-8V6"/>
+                <constraint firstItem="wAo-zf-6aP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bdd-mN-uDi"/>
+                <constraint firstAttribute="trailing" secondItem="wAo-zf-6aP" secondAttribute="trailing" id="HXe-Gc-tdc"/>
+                <constraint firstItem="wAo-zf-6aP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rzB-aw-QN9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="postTime" destination="a3Q-Og-Fvl" id="Rsp-Yd-36g"/>
+                <outlet property="userImage" destination="Jow-J5-RAV" id="77H-R8-TCO"/>
+                <outlet property="userLocation" destination="zuk-E0-R2L" id="4Ye-WM-R3f"/>
+                <outlet property="userName" destination="p0o-21-r57" id="AKk-li-R6Z"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-181.47321428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
